@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const SectionOne = () => {
   return (
-    <div className=" bg-[#F5FCFF]">
+    <div className="bg-[#F5FCFF]">
       <div className="grid grid-cols-1 p-1 container mx-auto w-11/12 md:grid-cols-2 gap-10">
         {/* Text Section */}
         <div className="flex flex-col justify-center md:items-start">
@@ -16,9 +16,9 @@ const SectionOne = () => {
             website or web application
           </h2>
           <p className="text-[#1C1E53] text-sm md:text-base mt-5">
-            "My expertise is centered on frontend development, allowing me to
-            create engaging, responsive, and visually appealing user interfaces
-            that meet a wide range of client needs."
+            &quot;My expertise is centered on frontend development, allowing me
+            to create engaging, responsive, and visually appealing user
+            interfaces that meet a wide range of client needs.&quot;
           </p>
           <div className="mt-5">
             <Link href="/" className="inline-block">

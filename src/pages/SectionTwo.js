@@ -75,8 +75,8 @@ const SectionTwo = () => {
           </p>
         </div>
 
-        {/* Skill 4 (Add more skills as needed) */}
-        <div className="bg-[#F5FCFF] p-5 rounded-lg ">
+        {/* Skill 4 */}
+        <div className="bg-[#F5FCFF] p-5 rounded-lg">
           <div className="w-12 h-12 flex justify-center items-center rounded-md bg-white">
             <Image
               src="/carbon.svg"
@@ -90,10 +90,10 @@ const SectionTwo = () => {
             Testing and Debugging
           </h2>
           <p className="text-[#282938] text-lg mt-2">
-            "Effective testing and debugging are crucial for ensuring software
-            reliability and performance, as they help identify and resolve
-            issues before deployment, leading to a smoother user experience and
-            fewer post-release problems."
+            &quot;Effective testing and debugging are crucial for ensuring
+            software reliability and performance, as they help identify and
+            resolve issues before deployment, leading to a smoother user
+            experience and fewer post-release problems.&quot;
           </p>
         </div>
       </div>
