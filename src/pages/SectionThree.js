@@ -5,18 +5,20 @@ const SectionThree = () => {
   return (
     <div className="w-full mt-10 p-1">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mx-auto container w-11/12">
+        
         <div className="flex justify-center items-center mt-5 md:mt-0 md:order-1">
-          
+          <div className="relative w-52 h-0 pb-[120%]">
             <Image
-              src="/myimage.jpeg"
-              width={200} // Adjust width to your desired size
-              height={200} // Adjust height to maintain aspect ratio
+              src="/Imaget.jpeg"
+              layout="fill"
+              objectFit="contain"
               alt="Tonia's image"
-              className="object-cover"
+              className="absolute inset-0"
             />
-         
+          </div>
         </div>
 
+        
         <div className="flex flex-col justify-center order-2 md:order-2">
           <h5 className="text-[#1C1E53] text-sm md:text-base mt-5">About</h5>
           <h2 className="text-[#1C1E53] mt-5 text-xl md:text-2xl lg:text-2xl font-bold">
