@@ -8,13 +8,13 @@ const SectionTwo = () => {
     <div className="w-11/12 container mx-auto">
       <div className="mt-10 text-start">
         <h5 className="text-lg font-semibold text-[#282938]">My Skills</h5>
-        <h1 className="text-2xl mt-2 font-semibold md:text-4xl text-[#282938]">
+        <h1 className="text-2xl mt-2 font-semibold md:text-3xl text-[#282938]">
           My Expertise
         </h1>
       </div>
 
       {/* Grid for larger screens */}
-      <div className="hidden md:grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-5 mt-10">
+      <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-5 mt-10">
         {/* Skill 1 */}
         <div className="bg-[#F5FCFF] p-5 rounded-lg">
           <div className="w-12 h-12 flex justify-center items-center rounded-md bg-white">

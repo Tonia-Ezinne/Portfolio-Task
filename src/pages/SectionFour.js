@@ -8,12 +8,12 @@ import GitPage from "../../components/GitPage";
 const SectionFour = () => {
   return (
     <div className="container mx-auto w-11/12 mt-14">
-      <div className="flex flex-col md:flex-row md:justify-between md:items-center">
+      <div className="flex flex-col p-2 md:flex-row md:justify-between md:items-center">
         <div>
           <h6 className="text-[#282938] text-sm font-semibold">
             Recent Projects
           </h6>
-          <h1 className="text-[#282938] mt-2 text-3xl md:text-4xl lg:text-5xl font-bold">
+          <h1 className="text-[#282938] mt-2 text-3xl md:text-3xl lg:text-3xl font-bold">
             My Portfolio
           </h1>
         </div>
@@ -30,12 +30,12 @@ const SectionFour = () => {
         </div>
       </div>
 
-      <div className="mt-10  gap-10 md:grid-cols-2 lg:grid-cols-3 hidden md:block">
-        <div className="bg-[#F5FCFF] p-6 rounded-lg border-2 border-[#006B6A]">
+      <div className="hidden md:flex flex-col md:flex-row  gap-6 container   mt-5">
+        <div className="p-1 rounded-lg ">
           <div className="flex justify-center items-center">
             <Image
               src="/Image3.svg"
-              width={350}
+              width={450}
               height={350}
               alt="ZIP File Thumbnail"
               className="w-full max-w-xs md:max-w-sm lg:max-w-md"
@@ -60,11 +60,11 @@ const SectionFour = () => {
         </div>
 
         {/* Project 2 */}
-        <div className="bg-[#F5FCFF] p-6 rounded-lg border-2 border-[#006B6A]">
+        <div className=" p-1 rounded-lg ">
           <div className="flex justify-center items-center">
             <Image
               src="/Image1.svg"
-              width={350}
+              width={450}
               height={350}
               alt="ZIP File Thumbnail"
               className="w-full max-w-xs md:max-w-sm lg:max-w-md"
@@ -89,11 +89,11 @@ const SectionFour = () => {
         </div>
 
         {/* Project 3 */}
-        <div className="bg-[#F5FCFF] p-6 rounded-lg border-2 border-[#006B6A]">
+        <div className=" p-1 rounded-lg ">
           <div className="flex justify-center items-center">
             <Image
               src="/Image.svg"
-              width={350}
+              width={450}
               height={350}
               alt="ZIP File Thumbnail"
               className="w-full max-w-xs md:max-w-sm lg:max-w-md"

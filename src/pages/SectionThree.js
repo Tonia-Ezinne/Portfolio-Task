@@ -3,31 +3,32 @@ import Image from "next/image";
 
 const SectionThree = () => {
   return (
-    <div className="">
-      
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mx-auto container w-11/12 mt-10  p-1 ">
-        {/* Image Section */}
+    <div className="w-full mt-10 p-1">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mx-auto container w-11/12">
+        
         <div className="flex justify-center items-center mt-5 md:mt-0 md:order-1">
-          <Image
-            src="/Imaget.jpeg"
-            width={500} // Adjust width to your desired size
-            height={600} // Adjust height to maintain aspect ratio
-            alt="Tonia's image"
-            className="object-cover "
-          />
+          <div className="relative w-full h-0 pb-[120%]">
+            <Image
+              src="/Imaget.jpeg"
+              layout="fill"
+              objectFit="contain"
+              alt="Tonia's image"
+              className="absolute inset-0"
+            />
+          </div>
         </div>
-        {/* Text Section */}
+
+        
         <div className="flex flex-col justify-center order-2 md:order-2">
           <h5 className="text-[#1C1E53] text-sm md:text-base mt-5">About</h5>
           <h2 className="text-[#1C1E53] mt-5 text-xl md:text-2xl lg:text-2xl font-bold">
             About Me
           </h2>
-          <p className="text-[#1C1E53] text-sm mt-2 md:text-base ">
-            Hi there! I’m Tonia, an enthusiastic frontend developer intern
-            with a passion for creating engaging and user-friendly web
-            experiences. Currently, I’m diving into the world of web
-            development, eager to apply my growing skills and contribute to
-            exciting projects.
+          <p className="text-[#1C1E53] text-sm mt-2 md:text-base">
+            Hi there! I’m Tonia, an enthusiastic frontend developer intern with
+            a passion for creating engaging and user-friendly web experiences.
+            Currently, I’m diving into the world of web development, eager to
+            apply my growing skills and contribute to exciting projects.
           </p>
 
           <h3 className="text-[#1C1E53] mt-5 text-xl md:text-2xl lg:text-2xl font-bold">
@@ -45,7 +46,6 @@ const SectionThree = () => {
               JavaScript: Developing interactive features and improving user
               experiences with foundational JavaScript.
             </li>
-    
             <li>
               React & Next.js: React is a JavaScript library for building user
               interfaces with reusable components, while Next.js is a framework
@@ -59,9 +59,10 @@ const SectionThree = () => {
             Educational Background
           </h3>
           <p className="text-[#1C1E53] text-sm md:text-base mt-2">
-            I have recently completed a six months program at Tech Studio Academy, which has equipped me with the
-            fundamentals of frontend development. I’m constantly learning and
-            staying updated with the latest industry trends and best practices.
+            I have recently completed a six-month program at Tech Studio
+            Academy, which has equipped me with the fundamentals of frontend
+            development. I’m constantly learning and staying updated with the
+            latest industry trends and best practices.
           </p>
 
           <h3 className="text-[#1C1E53] mt-5 text-xl md:text-2xl lg:text-2xl font-bold">
@@ -78,10 +79,9 @@ const SectionThree = () => {
             Projects and Experience
           </h3>
           <p className="text-[#1C1E53] text-sm md:text-base mt-2">
-            I’ve worked on several projects during my studies, including
-            JobMe Project. These
-            projects have allowed me to apply what I’ve learned and develop a
-            portfolio that showcases my work.
+            I’ve worked on several projects during my studies, including JobMe
+            Project. These projects have allowed me to apply what I’ve learned
+            and develop a portfolio that showcases my work.
           </p>
 
           <h3 className="text-[#1C1E53] mt-5 text-xl md:text-2xl lg:text-2xl font-bold">
@@ -90,7 +90,8 @@ const SectionThree = () => {
           <p className="text-[#1C1E53] text-sm md:text-base mt-2">
             I’m excited about the opportunity to learn from experienced
             developers and contribute to real-world projects. Feel free to
-            connect with me on Tonia-Ezinne on LinkedIn or check out my portfolio at ... I’d love to hear from you!
+            connect with me on Tonia-Ezinne on LinkedIn or check out my
+            portfolio at ... I’d love to hear from you!
           </p>
         </div>
       </div>
