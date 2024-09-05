@@ -1,0 +1,14 @@
+/* styles/SectionSix.module.css */
+.customCheckbox {
+  accent-color: #282938; /* Style for checkbox */
+}
+
+.textColor {
+  color: #282938; /* Text color for labels and other text */
+}
+
+.placeholder-gray {
+  color: #282938 /* Replace with your desired placeholder color */
+}
+
+
