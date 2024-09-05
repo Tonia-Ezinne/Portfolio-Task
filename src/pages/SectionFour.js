@@ -30,7 +30,7 @@ const SectionFour = () => {
         </div>
       </div>
 
-      <div className="mt-10 grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-10  gap-10 md:grid-cols-2 lg:grid-cols-3 hidden md:block">
         <div className="bg-[#F5FCFF] p-6 rounded-lg border-2 border-[#006B6A]">
           <div className="flex justify-center items-center">
             <Image
