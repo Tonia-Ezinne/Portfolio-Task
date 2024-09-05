@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-8">
           <Link href="/" className="flex items-center">
             <Image src="/image 1.svg" width={40} height={40} alt="logo" />
-            <h1 className="text-[#394149] hover:text-[#5E3BEE] text-lg md:text-2xl font-semibold ml-2 ">
+            <h1 className="text-[#394149] hover:text-[#5E3BEE] text-lg md:text-2xl font-semibold ml-2">
               ToniaDev
             </h1>
           </Link>
@@ -60,7 +60,10 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Section: Footer Text and Additional Links */}
+      {/* Divider Line */}
+      <div className="border-t border-[#D1D5DB] my-5 mx-5 lg:mx-0"></div>
+
+      {/* Bottom Section: Footer Info */}
       <div className="container w-11/12 mx-auto py-5 flex flex-col lg:flex-row justify-between items-center gap-5">
         <div className="text-center lg:text-left">
           <p className="text-lg font-semibold">

@@ -118,39 +118,41 @@ const Navbar = () => {
       >
         <Link
           href="/"
-          className="block py-2 px-4 text-sm text-[#1C1E53] hover:text-[#5E3BEE] transition duration-300"
+          className="block py-2 px-4 text-lg text-[#1C1E53] hover:text-[#5E3BEE] transition duration-300"
           onClick={handleLinkClick}
         >
           Home
         </Link>
         <Link
           href="/joblisting"
-          className="block py-2 px-4 text-sm text-[#1C1E53] hover:text-[#5E3BEE] transition duration-300"
+          className="block py-2 px-4 text-lg text-[#1C1E53] hover:text-[#5E3BEE] transition duration-300"
           onClick={handleLinkClick}
         >
           Portfolio
         </Link>
         <Link
           href="/about-me"
-          className="block py-2 px-4 text-sm text-[#1C1E53] hover:text-[#5E3BEE] transition duration-300"
+          className="block py-2 px-4 text-lg text-[#1C1E53] hover:text-[#5E3BEE] transition duration-300"
           onClick={handleLinkClick}
         >
           About Me
         </Link>
         <Link
           href="/testimonials"
-          className="block py-2 px-4 text-sm text-[#1C1E53] hover:text-[#5E3BEE] transition duration-300"
+          className="block py-2 px-4 text-lg text-[#1C1E53] hover:text-[#5E3BEE] transition duration-300"
           onClick={handleLinkClick}
         >
           Testimonials
         </Link>
-        <Link
-          href="/contact"
-          className="block py-2 px-4 text-sm text-[#1C1E53] hover:text-[#5E3BEE] transition duration-300"
-          onClick={handleLinkClick}
-        >
-          Contact
-        </Link>
+        <div className="px-4">
+          <Link
+            href="/contact"
+            className="block  w-20 text-lg py-1 px-1  hover:text-[#5E3BEE] transition duration-300 border text-[#1C1E53] border-[#5E3BEE] hover:bg-[#1C1E53] rounded"
+            onClick={handleLinkClick}
+          >
+            Contact
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -13,7 +13,9 @@ const Stars = ({ count, size, color }) => (
 
 const SectionFive = () => {
   return (
-    <div className="bg-[#F5FCFF] mt-10 py-10">
+    <div
+      className="bg-[#F5FCFF] mt-10 py-10"
+    >
       <div className="container mx-auto w-11/12">
         <div className="text-start mb-8">
           <h6 className="text-[#282938] text-sm font-semibold">
