@@ -25,14 +25,14 @@ const Navbar = () => {
 
   return (
     <div
-      className="sticky top-0 z-50 bg-[#FFFFFFCC] py-1 lg:py-2 shadow-lg"
+      className="sticky top-0 z-50 bg-[#FFFFFFCC] w-11/12 py-1 lg:py-2 container mx-auto"
       ref={menuRef}
     >
-      <nav className=" container mx-auto w-11/12 flex items-center justify-between px-4 lg:px-1">
+      <nav className="flex items-center justify-between scroll-smooth">
         {/* Logo Section */}
         <Link
           href="/"
-          className="flex items-center py-4 px-2"
+          className="flex items-center py-4"
           onClick={handleLinkClick}
         >
           <Image src="/image 1.svg" width={40} height={40} alt="logo" />
@@ -45,27 +45,27 @@ const Navbar = () => {
         <div className="hidden md:flex flex-grow items-center justify-center space-x-4">
           <Link
             href="/"
-            className="py-4 px-2 text-black hover:text-[#5E3BEE] transition duration-300  font-semibold lg:text-lg"
+            className="py-4 px-2 text-black hover:text-[#5E3BEE] transition duration-300 font-semibold lg:text-lg"
             onClick={handleLinkClick}
           >
             Home
           </Link>
           <Link
-            href="/joblisting"
+            href="SectionFour"
             className="py-4 px-2 text-black hover:text-[#5E3BEE] transition duration-300 font-semibold lg:text-lg"
             onClick={handleLinkClick}
           >
             Portfolio
           </Link>
           <Link
-            href="/about-me"
+            href="#"
             className="py-4 px-2 text-black hover:text-[#5E3BEE] transition duration-300 font-semibold lg:text-lg"
             onClick={handleLinkClick}
           >
             About Me
           </Link>
           <Link
-            href="/testimonials"
+            href="SectionFive"
             className="py-4 px-2 text-black hover:text-[#5E3BEE] transition duration-300 font-semibold lg:text-lg"
             onClick={handleLinkClick}
           >
@@ -74,10 +74,10 @@ const Navbar = () => {
         </div>
 
         {/* Contact Link */}
-        <div className="hidden lg:flex items-center w-26  border border-[#5E3BEE] hover:bg-[#1C1E53] rounded">
+        <div className="hidden lg:flex items-center w-26 border border-[#5E3BEE] hover:bg-[#1C1E53] rounded">
           <Link
-            href="/contact"
-            className="py-4 px-2 text-[#5E3BEE] text-center hover:text-[white] transition duration-300  rounded font-semibold lg:text-lg"
+            href="SectionSix"
+            className="py-4 px-2 text-[#5E3BEE] text-center hover:text-[white] transition duration-300 rounded font-semibold lg:text-lg"
             onClick={handleLinkClick}
           >
             Contact Me
@@ -112,8 +112,10 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden ${
-          isMenuOpen ? "block" : "hidden"
+        className={`md:hidden transition-all duration-500 ease-in-out ${
+          isMenuOpen
+            ? "max-h-screen opacity-100"
+            : "max-h-0 opacity-0 overflow-hidden"
         } bg-[#FFFFFFCC] py-2 shadow-lg`}
       >
         <Link
@@ -124,21 +126,21 @@ const Navbar = () => {
           Home
         </Link>
         <Link
-          href="/joblisting"
+          href="SectionFour"
           className="block py-2 px-4 text-lg text-[#1C1E53] hover:text-[#5E3BEE] transition duration-300"
           onClick={handleLinkClick}
         >
           Portfolio
         </Link>
         <Link
-          href="/about-me"
+          href="#"
           className="block py-2 px-4 text-lg text-[#1C1E53] hover:text-[#5E3BEE] transition duration-300"
           onClick={handleLinkClick}
         >
           About Me
         </Link>
         <Link
-          href="/testimonials"
+          href="SectionFive"
           className="block py-2 px-4 text-lg text-[#1C1E53] hover:text-[#5E3BEE] transition duration-300"
           onClick={handleLinkClick}
         >
@@ -146,8 +148,8 @@ const Navbar = () => {
         </Link>
         <div className="px-4">
           <Link
-            href="/contact"
-            className="block  w-20 text-lg py-1 px-1  hover:text-[#5E3BEE] transition duration-300 border text-[#1C1E53] border-[#5E3BEE] hover:bg-[#1C1E53] rounded"
+            href="SectionSix"
+            className="block w-20 text-lg py-1 px-1 hover:text-[#5E3BEE] transition duration-300 border text-[#1C1E53] border-[#5E3BEE] hover:bg-[#1C1E53] rounded"
             onClick={handleLinkClick}
           >
             Contact
