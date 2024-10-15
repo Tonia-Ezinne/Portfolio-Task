@@ -49,7 +49,7 @@ const SectionFour = () => {
               for job opportunities from the comfort of their home. Built using
               Next.js, Tailwind CSS, JavaScript, HTML, and CSS, Jobme provides a
               seamless and responsive experience to help you find your next
-              career move with ease.The platform features a user-friendly
+              career move with ease. The platform features a user-friendly
               interface with advanced filters to tailor your job search. It
               keeps you updated on the latest job openings.
             </p>
@@ -80,11 +80,11 @@ const SectionFour = () => {
             <h4 className="font-bold text-lg lg:mt-14">RealEstate</h4>
             <p className="text-[#282938] mt-4 text-base md:text-lg">
               RealEstate is a comprehensive platform designed to help you buy,
-              sell, and rent properties with ease. Whether you're searching for
-              your dream home or looking to invest in real estate, our platform
-              offers a seamless experience with detailed property listings,
-              Built using Next.js, Tailwind CSS, JavaScript, HTML, and CSS,
-              RealEstate ensures a modern, fast, and responsive experience
+              sell, and rent properties with ease. Whether you&apos;re searching
+              for your dream home or looking to invest in real estate, our
+              platform offers a seamless experience with detailed property
+              listings. Built using Next.js, Tailwind CSS, JavaScript, HTML, and
+              CSS, RealEstate ensures a modern, fast, and responsive experience
               across all devices.
             </p>
             <div className="flex gap-2 mt-6 lg:mt-12">

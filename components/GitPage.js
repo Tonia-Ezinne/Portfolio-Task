@@ -2,11 +2,10 @@ import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import Image from "next/image"; // Import your image component
-import Link from "next/link"; // Import Link from next/link
-import { GoArrowUpRight } from "react-icons/go"; // Import GoArrowUpRight from react-icons
+import Image from "next/image";
+import Link from "next/link";
+import { GoArrowUpRight } from "react-icons/go";
 
-// Slide Content for Jobme
 const SlideContent1 = () => (
   <div className="flex flex-col  rounded-lg w-full md:w-1/3">
     <div className="flex justify-center items-center h-[350px]">
@@ -39,7 +38,6 @@ const SlideContent1 = () => (
   </div>
 );
 
-// Slide Content for RealEstate
 const SlideContent2 = () => (
   <div className="flex flex-col rounded-lg w-full md:w-1/3">
     <div className="flex justify-center items-center h-[350px]">
@@ -55,11 +53,11 @@ const SlideContent2 = () => (
       <h4 className="font-bold text-lg">RealEstate</h4>
       <p className="text-[#282938] mt-4 text-base md:text-lg">
         RealEstate is a comprehensive platform designed to help you buy, sell,
-        and rent properties with ease. Whether you're searching for your dream
-        home or looking to invest in real estate, our platform offers a seamless
-        experience with detailed property listings, Built using Next.js,
-        Tailwind CSS, JavaScript, HTML, and CSS, RealEstate ensures a modern,
-        fast, and responsive experience across all devices.
+        and rent properties with ease. Whether you&apos;re searching for your
+        dream home or looking to invest in real estate, our platform offers a
+        seamless experience with detailed property listings, Built using
+        Next.js, Tailwind CSS, JavaScript, HTML, and CSS, RealEstate ensures a
+        modern, fast, and responsive experience across all devices.
       </p>
       <div className="flex gap-2 mt-4">
         <Link
@@ -74,7 +72,6 @@ const SlideContent2 = () => (
   </div>
 );
 
-// Slide Content for CofeShop
 const SlideContent3 = () => (
   <div className="flex flex-col  rounded-lg w-full md:w-1/3">
     <div className="flex justify-center items-center h-[350px]">
@@ -111,7 +108,6 @@ const SlideContent3 = () => (
 
 const data = [SlideContent1, SlideContent2, SlideContent3];
 
-// Main Carousel Component
 const GitPage = () => {
   const settings = {
     dots: true,
@@ -127,7 +123,7 @@ const GitPage = () => {
         {data.map((SlideComponent, index) => (
           <div key={index} className="flex items-center justify-center">
             <div className="w-full max-w-md h-auto flex items-center justify-center p-4">
-              <SlideComponent /> {/* Render the component */}
+              <SlideComponent />
             </div>
           </div>
         ))}
